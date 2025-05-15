@@ -1,23 +1,9 @@
-import { NavLink } from "react-router-dom";
+import Navbar from "../components/Nabar.jsx";
 
 function Personaggi() {
   return (
     <>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/">Homepage</NavLink>
-            </li>
-            <li>
-              <NavLink to="/personaggi">Personaggi</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contacts">Contatti</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Navbar/>
       <div>
         <h1>Personaggi</h1>
         <p>Questa è la pagina dei personaggi.</p>
