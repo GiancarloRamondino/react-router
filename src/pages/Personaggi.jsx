@@ -1,4 +1,4 @@
-import Navbar from "../components/Nabar.jsx";
+
 import Lista from "../components/Lista.jsx";
 
 function Personaggi() {
