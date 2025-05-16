@@ -9,7 +9,7 @@ function DefaultLayout() {
         <Navbar/>
       </header>
       <main>
-         <div>io  sono un contenuto della home</div>  
+         <div>io  sono un contenuto di ogni pagina</div>  
          <Outlet />
       </main>
     </div>

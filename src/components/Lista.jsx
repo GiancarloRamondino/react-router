@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Lista() {
 
@@ -22,8 +23,10 @@ function Lista() {
         <ul>
             {personaggi.map((personaggio) => (
             <li key={personaggio.id}>
-                <img src={personaggio.image} alt={personaggio.name} />
-                <p>{personaggio.name}</p>
+                <NavLink to={`/personaggi/${personaggio.id}`}>
+                    <img src={personaggio.image} alt={personaggio.name} />
+                    <p>{personaggio.name}</p>
+                </NavLink>
             </li>
             ))}
         </ul>

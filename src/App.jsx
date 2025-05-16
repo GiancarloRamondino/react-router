@@ -18,9 +18,11 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route index element={<Homepage />} />  
-            <Route path="/personaggi" element={<Personaggi />} />
+            <Route path="/personaggi">
+              <Route index element={<Personaggi />} />
+              <Route path="/personaggi/:id" element={<SinglePers />} />
+            </Route>
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/personaggi/:id" element={<SinglePers />} />
           </Route>
         </Routes>
       </BrowserRouter>  
