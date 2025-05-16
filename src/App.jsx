@@ -20,7 +20,7 @@ function App() {
             <Route index element={<Homepage />} />  
             <Route path="/personaggi">
               <Route index element={<Personaggi />} />
-              <Route path="/personaggi/:id" element={<SinglePers />} />
+              <Route path="/personaggi:id" element={<SinglePers />} />
             </Route>
             <Route path="/contacts" element={<Contacts />} />
           </Route>

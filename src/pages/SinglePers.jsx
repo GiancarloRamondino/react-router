@@ -25,13 +25,13 @@ function SinglePers() {
     const handlePrev = () => {
         const prevId = parseInt(id, 10) - 1;
         if (prevId > 0) {
-            navigate(`/singlepers/${prevId}`);
+            navigate(`/personaggi/${prevId}`);
         }
     };
 
     const handleNext = () => {
         const nextId = parseInt(id, 10) + 1;
-        navigate(`/singlepers/${nextId}`);
+        navigate(`/personaggi/${nextId}`);
     };
 
     return (
