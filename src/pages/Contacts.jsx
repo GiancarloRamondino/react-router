@@ -4,7 +4,6 @@ import Contatti from "../components/Contatti.jsx";
 function Contacts() {
     return (
         <>
-            <Navbar />
             <div className="contacts">
                 <h1>Contatti</h1>
                 <p>Per qualsiasi informazione, non esitate a contattarci!</p>
