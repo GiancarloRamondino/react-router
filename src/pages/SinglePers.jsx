@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";   
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 function SinglePers() {
@@ -18,11 +19,29 @@ function SinglePers() {
     useEffect(() => {
         getSinglePers();
     }, [id]);
-            
+
+    const navigate = useNavigate();
+
+    const handlePrev = () => {
+        const prevId = parseInt(id, 10) - 1;
+        if (prevId > 0) {
+            navigate(`/singlepers/${prevId}`);
+        }
+    };
+
+    const handleNext = () => {
+        const nextId = parseInt(id, 10) + 1;
+        navigate(`/singlepers/${nextId}`);
+    };
+
     return (
         <div>
             <h1>{personaggio.name}</h1>
             <img src={personaggio.image} alt={personaggio.name} />
+            <div>
+                <button onClick={handlePrev}>Previous</button>
+                <button onClick={handleNext}>Next</button>
+            </div>
         </div>
     );
 }
